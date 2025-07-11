@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #23272a;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-hero {
+  background-image: url('../assets/imgs/fundo-imagine-um-lugar.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.btn {
+  padding: 14px 24px;
+  border-radius: 28px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #23272a;
+}
+
+.btn-primary:hover {
+  background-color: #e6e6e6;
+}
+
+.btn-secondary {
+  background-color: #23272a;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #444;
+}
+
+.section-invite,
+.section-voice,
+.section-community {
+  padding: 60px 0;
+}
+
+.section-invite .container,
+.section-voice .container,
+.section-community .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.section-image,
+.section-text {
+  flex: 1 1 500px;
+}
+
+.section-text h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: #23272a;
+}
+
+.section-text p {
+  font-size: 20px;
+  color: #23272a;
+}
+
+/* REMOVIDO: .section-voice .container { flex-direction: row-reverse; } */
+
+.section-technology {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.section-technology .container {
+  max-width: 900px;
+}
+
+.section-technology h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #23272a;
+  margin-bottom: 16px;
+}
+
+.section-technology p {
+  font-size: 20px;
+  color: #23272a;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #23272a;
+  padding: 20px 0;
+  color: white;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-logo {
+  width: 36px; 
+  height: auto;
+}
+
+.footer p {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+  .section-hero {
+    padding: 20px 0 !important;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .section-hero .container {
+    padding: 0 16px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .section-invite,
+  .section-voice,
+  .section-community,
+  .section-technology {
+    padding: 20px 0 !important;
+  }
+
+  .section-invite .container,
+  .section-voice .container,
+  .section-community .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-text h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .section-text p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  .section-image {
+    margin-bottom: 24px;
+  }
+
+  .section-technology h2 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .section-technology p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  .footer .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .footer p {
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+
+  .footer-logo {
+    width: 28px;
+  }
+}
